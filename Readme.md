@@ -20,6 +20,12 @@ This interaction is visible in the screenshots below between the player and a dr
 
 The game is still at the very beginning of its development, the game mechanics still require reflection.
 
+Our main ambition was to create a game from A to Z using no external libraries, apart from the SDL2 graphics library. So we set about creating our own GUI system to display text panels and buttons. To give a retro style each widget needs a set of tiles on an image for its display. The size of a tile must be at least 16x16 pixels for aesthetic graphics, but the most important thing is to respect the number of tiles in length and width on the image according to the request of the widget.
+
+## Keyborad
+
+Use the arrow keys on your keyboard to move the character, the space key to read signs and open doors and the + and - keys to enlarge or reduce the view of the map.
+
 ## Technologies
 
 The programs use the SDL2 library for sound and graphics.
