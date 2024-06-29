@@ -10,11 +10,15 @@ The game uses tile sets for the graphics of the world and entities.
 
 To facilitate the creation of new worlds and entities, configuration files allow simple and dynamic modification of the game, without the need to recompile it. The configuration files, recognizable by their '.conf' extension, use a syntax that we have developed especially for the game. This syntax allows you to indicate the type of each variable, to construct tables and to define variables from their digital identifier.
 
+The management of game resources is managed by a large linked list which imports resources as they are requested, which makes it possible to limit the use of memory with unused resources.
+
 A debugger mode is available and can be activated on the command line by entering './PolyAdvanture -debug' in the terminal.
 
 The interaction between entities uses a rudimentary system. Each entity has two collision boxes, one to define the size of its body and one to define the part of its body in contact with the ground. Each entity is stored in the same list. At each frame, the entities are updated, which allows them to be moved automatically and displayed one according to the other to give an interesting perspective if the collision boxes of two entities overlap.
 
 This interaction is visible in the screenshots below between the player and a dragon.
+
+The game is still at the very beginning of its development, the game mechanics still require reflection.
 
 ## Technologies
 
